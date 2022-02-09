@@ -1,3 +1,13 @@
+#include<stdio.h>
+int input()
+{
+  int a;
+  printf("enter the values of side of triangle \n");
+  scanf("%d",&a);
+  return a;
+}
+int check_scalene(int a,int b, int c,int *iss)
+{
   if(a!=b || b!=c || a!=c)
     *iss==1;
   else
